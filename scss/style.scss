@@ -38,6 +38,8 @@ html{
 }
 
 body {
+
+	transition: all 300ms linear;
 	font-family: $font-stack;
 	font-size: $sm-fsz;
 	color: $pr-color;
@@ -124,6 +126,18 @@ body {
 			opacity: 0.8;
 			color: white;
 			background: $nd-color;
+		}
+	}
+
+	.btn-white{
+		color: $nd-color !important;
+		background: white;
+		border-radius: 0;
+		font-weight: 900;
+		cursor: pointer;
+
+		&:hover{
+			opacity: 0.8;
 		}
 	}
 
@@ -1677,22 +1691,33 @@ footer{
 
 .headroom, .headroom--unpinned{
 	.logo-type{
-		display: none;
+		opacity: 0;		
+		fill:white;
+		height: 35px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		transition: opacity 0.3s linear;
+
 	}
 	.logo-sign{
 		height: 30px;
-		display: block;
+		opacity: 1;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		transition: opacity 0.3s linear;
 	}
 }
 
 .headroom--pinned{
 	.logo-sign{
-		display: none;
+		opacity: 0;
 	}
 
 	.logo-type{
-		fill:white;
-		display: block;
-		height: 35px;
+		opacity: 1;
 	}
 }
