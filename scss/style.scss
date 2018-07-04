@@ -1689,9 +1689,8 @@ footer{
 	}
 }
 
-.headroom, .headroom--unpinned{
-	.logo-type{
-		opacity: 0;		
+.headroom{
+	.logo-type{	
 		fill:white;
 		height: 35px;
 		position: absolute;
@@ -1703,7 +1702,6 @@ footer{
 	}
 	.logo-sign{
 		height: 30px;
-		opacity: 1;
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -1712,7 +1710,17 @@ footer{
 	}
 }
 
-.headroom--pinned{
+.headroom--top, .headroom--pinned{
+	.logo-sign{
+		opacity: 1;
+	}
+
+	.logo-type{
+		opacity: 0;
+	}
+}
+
+.headroom--unpinned{
 	.logo-sign{
 		opacity: 0;
 	}
