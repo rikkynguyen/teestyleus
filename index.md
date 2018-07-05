@@ -10,13 +10,13 @@ layout: default
 	</ol>
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<img src="../images/slide/1.jpg" alt="...">
+			<img src="images/slide/1.jpg" alt="...">
 		</div>
 		<div class="item">
-			<img src="../images/slide/2.jpg" alt="...">
+			<img src="images/slide/2.jpg" alt="...">
 		</div>
 		<div class="item">
-			<img src="../images/slide/3.jpg" alt="...">
+			<img src="images/slide/3.jpg" alt="...">
 		</div>
 	</div>
 	<a class="left carousel-control" href="#masthead-slide" role="button" data-slide="prev">
@@ -35,7 +35,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/01.png">
+						<img src="images/products/adults/01.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -54,7 +54,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/02.png">
+						<img src="images/products/adults/02.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -71,7 +71,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/03.png">
+						<img src="images/products/adults/03.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -87,7 +87,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/04.png">
+						<img src="images/products/adults/04.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -102,7 +102,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/01.png">
+						<img src="images/products/adults/01.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -121,7 +121,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/02.png">
+						<img src="images/products/adults/02.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -138,7 +138,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/03.png">
+						<img src="images/products/adults/03.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -154,7 +154,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/04.png">
+						<img src="images/products/adults/04.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -169,7 +169,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/01.png">
+						<img src="images/products/adults/01.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -188,7 +188,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/02.png">
+						<img src="images/products/adults/02.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -205,7 +205,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/03.png">
+						<img src="images/products/adults/03.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -221,7 +221,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/04.png">
+						<img src="images/products/adults/04.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -236,7 +236,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/01.png">
+						<img src="images/products/adults/01.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -255,7 +255,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/02.png">
+						<img src="images/products/adults/02.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -272,7 +272,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/03.png">
+						<img src="images/products/adults/03.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -288,7 +288,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/04.png">
+						<img src="images/products/adults/04.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -303,7 +303,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/01.png">
+						<img src="images/products/adults/01.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -322,7 +322,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/02.png">
+						<img src="images/products/adults/02.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -339,7 +339,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/03.png">
+						<img src="images/products/adults/03.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -355,7 +355,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/04.png">
+						<img src="images/products/adults/04.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -370,7 +370,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/01.png">
+						<img src="images/products/adults/01.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -389,7 +389,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/02.png">
+						<img src="images/products/adults/02.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -406,7 +406,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/03.png">
+						<img src="images/products/adults/03.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
@@ -422,7 +422,7 @@ layout: default
 			<div class="col-md-3 col-sm-6 col-xs-12 pro-item">
 				<div class="thumbnail">
 					<a href="product-detail.html">
-						<img src="../images/products/adults/04.png">
+						<img src="images/products/adults/04.png">
 						<div class="caption text-center">
 							<h3 class="pro-tit">Lorem Ispum Dolar Roma</h3>
 							<p class="pro-price">350.000 VND</p>
