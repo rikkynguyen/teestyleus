@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% if site.author %}
+    <meta name="author" content="{{ site.author }}">
+  {% endif %}
+  {% capture description %}{% if page.description %}{{ page.description }}{% elsif site.description %}{{ site.description }}{%else%}{{ content | raw_content }}{% endif %}{% endcapture %}
+  <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
+  {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords }}">
+  {%else%}
+    <meta name="keywords" content="{{ site.keywords }}">
+  {% endif %}
+    
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/simple-line-icons.css">
+  <link rel="stylesheet" href="../css/ts-icons.css">
+  <link href="../css/font-stylesheet.css" rel="stylesheet">
+  <link href="../css/flickity.css" rel="stylesheet">
+  <link href="../css/offcanvas.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+ 
+  {% include google_analytics.html %} 
+</head>

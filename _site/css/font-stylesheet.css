@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'bahn_proregular';
+    src: url('../fonts/new-font/bahnpro_regular-webfont.woff2') format('woff2'),
+         url('../fonts/new-font/bahnpro_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'cooper_hewitt';
+    src: url('../fonts/new-font/cooperhewitt-bold-webfont.woff2') format('woff2'),
+         url('../fonts/new-font/cooperhewitt-bold-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'cooper_hewitt';
+    src: url('../fonts/new-font/cooperhewitt-book-webfont.woff2') format('woff2'),
+         url('../fonts/new-font/cooperhewitt-book-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'cooper_hewitt';
+    src: url('../fonts/new-font/cooperhewitt-medium-webfont.woff2') format('woff2'),
+         url('../fonts/new-font/cooperhewitt-medium-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}

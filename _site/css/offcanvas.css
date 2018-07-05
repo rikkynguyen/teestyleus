@@ -1,0 +1,173 @@
+#wrapper {
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	padding-left: 0;
+	width: 100vw;
+}
+
+#wrapper.toggled { padding-left: 300px; }
+
+#wrapper.toggled #sidebar-wrapper { left: 300px;}
+
+#wrapper.toggled #page-content-wrapper {
+	left: 300px;
+	/*position: fixed;*/
+	overflow-x: hidden;
+	width: 100vw;
+}
+
+#wrapper.toggled #page-content-wrapper .navbar{
+	right: -300px;
+}
+
+#wrapper.toggled #page-content-wrapper .brand-logo{
+	margin-left: 300px;
+}
+
+#wrapper.toggled #page-content-wrapper .hamburger{
+	margin-left: 300px;
+}
+
+#wrapper #page-content-wrapper .navbar{
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+
+#sidebar-wrapper {
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	background: #111;
+	height: 100%;
+	left: 300px;
+	margin-left: -300px;
+	overflow-x: hidden;
+	/*overflow-y: auto;*/
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	width: 0;
+	z-index: 1000;
+	border: none;
+	width: 300px;
+	position: fixed;
+	left: -300px;
+}
+
+#sidebar-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+#page-content-wrapper {
+	width: 100vw;
+	height: 100%;
+}
+
+.sidebar-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.sidebar-nav li {
+	display: inline-block;
+	line-height: 20px;
+	position: relative;
+	width: 100%;
+}
+
+.sidebar-nav li:before {
+	-moz-transition: width 0.2s ease-in;
+	-ms-transition: width 0.2s ease-in;
+	-webkit-transition: width 0.2s ease-in;
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	-webkit-transition: width 0.2s ease-in;
+	transition: width 0.2s ease-in;
+	width: 3px;
+	z-index: -1;
+}
+
+.sidebar-nav li.sidebar-brand:before{
+	background: none;
+}
+
+.sidebar-nav li.sidebar-brand {
+	padding: 15px;
+	font-family: 'Proxima Nova', sans-serif;
+	background-color: #111;
+	color: #d6153b;
+	font-size: 1.5rem;
+}
+
+.sidebar-nav li:hover:before {
+	-webkit-transition: width 0.2s ease-in;
+	transition: width 0.2s ease-in;
+	width: 100%;
+}
+
+.sidebar-nav li a {
+	color: white;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1.8rem;
+	line-height: 2em;
+}
+
+.sidebar-nav li.open:hover before {
+	-webkit-transition: width 0.2s ease-in;
+	transition: width 0.2s ease-in;
+	width: 100%;
+}
+
+.sidebar-nav .dropdown-menu {
+	background-color: #222;
+	border-radius: 0;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+.sidebar-nav .dropdown-menu li a{
+	font-size: 1.5rem;
+}
+
+.sidebar-nav li a:hover, .sidebar-nav li.open a:hover {
+	background-color: transparent;
+	color: #d6153b;
+	text-decoration: none;
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus{
+	background-color: transparent;
+}
+
+.hamburger {
+	z-index: 2;
+}
+
+.overlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 3;
+}

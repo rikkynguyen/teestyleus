@@ -1,0 +1,44 @@
+# Site settings
+title: Tee Style Us
+author: RikkyNguyen
+
+keywords: t-shirt design, buy t-shirt
+description: Witty description here.
+
+header: images/logo.png
+
+# Formspree contact Form
+contact_form: "https://formspree.io/ctarwater@chrisanthropic.com"
+
+
+# Exclude our ruby stuff
+exclude: [.bundle, .vendor, .bin, starving-artist.gemspec, bin, vendor, Gemfile, Gemfile.lock, Rakefile, s3_website.yml, starving-artist-jekyll-theme-*.gem]
+
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  
+# Compress our Css
+#sass:
+#    style: :compressed
+
+include: ['_pages']
+
+#### SEO Stuff
+# Google Analytics
+google_universal_analytics: 
+google_universal_analytics_cookiedomain: auto
+
+# Facebook Opengraph
+facebook_user:
+facebook_app_id:                                #enter your App ID
+facebook_locale: en_US
+facebook_page:                                  #the URL of your Facebook Page
+facebook_image: images/author.jpg                      #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
+
+# Twitter Cards
+twitter_user: 
+twitter_card: true
+twitter_image: images/author.jpg                       #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
