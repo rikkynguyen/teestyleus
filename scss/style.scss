@@ -63,6 +63,9 @@ body {
 	p  { font-size: $sm-fsz; } 
 	li { font-size: $sm-fsz; } 
 	li li, li p { font-size: $sm-fsz; }
+	a{
+		cursor: pointer;
+	}
 	
 	.text-light{
 		font-weight: 500;
@@ -335,12 +338,12 @@ body {
 		height: 50px;
 	}
 	
-	.navbar-toggle {
+	.navbar-toggle.hamburger {
 		display: block; 
 		float: left;
 		border: none;
 		margin: 0;
-		padding: 15px;
+		padding: 20px 15px;
 		
 		@include breakpoint (xs) {
 			margin-left: -15px;
@@ -860,6 +863,10 @@ body {
 
 				img{
 					width: 100%;
+
+					@include breakpoint (xs) {
+						width: 80%;
+					}
 				}
 			}
 
@@ -1162,12 +1169,38 @@ footer{
 
 #masthead-slide{
 	.carousel-inner{
-		height: 800px!important;
+		max-height: 800px!important;
 	}
-}
 
-.carousel-inner{
-	height: 800px !important;
+	.carousel-indicators{
+		li{
+			width: 30px;
+			height: 8px;
+			background: $nd-color;
+			opacity: 0.5;
+			border-radius: 4px;
+			border: 0px;
+			margin: 0px 5px;
+
+			&:hover{
+				background: white;
+				opacity: 1;
+				-webkit-box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.7);
+				-moz-box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.7);
+				box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.7);
+			}
+		}
+
+		li.active{
+			border: 0px;
+			background: white;
+			opacity: 1;
+			margin: 0 5px;
+			-webkit-box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.7);
+			-moz-box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.7);
+			box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.7);
+		}
+	}
 }
 
 .cart-body{
@@ -1689,43 +1722,62 @@ footer{
 	}
 }
 
-.headroom{
-	.logo-type{	
+.headroom {
+	.logo-type {	
 		fill:white;
-		height: 35px;
+		height: 20px;
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		top: 50%;
-		transition: opacity 0.3s linear;
-
 	}
-	.logo-sign{
+
+	.logo-sign {
 		height: 30px;
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		top: 50%;
-		transition: opacity 0.3s linear;
+	}
+
+	.logo-type, .logo-sign, .navbar-right, .navbar-left{
+		transition: all 0.3s linear;
 	}
 }
 
-.headroom--top, .headroom--pinned{
-	.logo-sign{
+.headroom--top, .headroom--pinned {
+	.logo-sign {
 		opacity: 1;
 	}
 
-	.logo-type{
+	.logo-type {
 		opacity: 0;
 	}
 }
 
-.headroom--unpinned{
-	.logo-sign{
+.headroom--unpinned {
+	height: 50px;
+	transition: all 0.3s linear;
+
+	.logo-sign {
 		opacity: 0;
 	}
 
-	.logo-type{
+	.logo-type {
 		opacity: 1;
+	}
+
+	.navbar-left, .search-wrapper {
+		transform-origin: top left;
+		-ms-transform: scale(0.8, 0.8); /* IE 9 */
+   		-webkit-transform: scale(0.8, 0.8); /* Safari */
+    	transform: scale(0.8, 0.8);
+	}
+
+	.navbar-right {
+		transform-origin: top right;
+		-ms-transform: scale(0.8, 0.8); /* IE 9 */
+   		-webkit-transform: scale(0.8, 0.8); /* Safari */
+    	transform: scale(0.8, 0.8);
 	}
 }
