@@ -2,32 +2,7 @@
 layout: default
 ---
 
-<div id="masthead-slide" class="carousel slide" data-ride="carousel">
-	<ol class="carousel-indicators">
-		<li data-target="#masthead-slide" data-slide-to="0" class="active"></li>
-		<li data-target="#masthead-slide" data-slide-to="1"></li>
-		<li data-target="#masthead-slide" data-slide-to="2"></li>
-	</ol>
-	<div class="carousel-inner" role="listbox">
-		<div class="item active">
-			<img src="images/slide/1.jpg" alt="...">
-		</div>
-		<div class="item">
-			<img src="images/slide/2.jpg" alt="...">
-		</div>
-		<div class="item">
-			<img src="images/slide/3.jpg" alt="...">
-		</div>
-	</div>
-	<a class="left carousel-control" href="#masthead-slide" role="button" data-slide="prev">
-		<span class="glyphicon glyphicon-chevron-left ts-left" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	</a>
-	<a class="right carousel-control" href="#masthead-slide" role="button" data-slide="next">
-		<span class="glyphicon glyphicon-chevron-right ts-right" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	</a>
-</div>
+{% include slide.html %}
 
 <div class="pro-container text-center">
 	<div class="container pro-wrp">

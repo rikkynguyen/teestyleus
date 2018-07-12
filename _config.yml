@@ -19,7 +19,7 @@ exclude: [.bundle, .vendor, .bin, starving-artist.gemspec, bin, vendor, Gemfile,
 markdown: kramdown
 kramdown:
   input: GFM
-  
+
 # Compress our Css
 #sass:
 #    style: :compressed
