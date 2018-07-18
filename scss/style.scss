@@ -311,7 +311,7 @@ body {
 	}
 }
 
-.input-group.ts-form{
+.input-group.tee-form{
 	border: 1px solid $rd-color;
 	border-radius: 4px;
 
@@ -744,7 +744,7 @@ body {
 				margin-left: 0.01px;
 			}
 
-			.ts-icon{
+			.tee-icon{
 				font-size: $xlg-fsz;
 				line-height: 0.75;
 				margin-right: 10px;
@@ -801,7 +801,7 @@ body {
 			.sub-menu{
 				button.btn{
 					font-size: $sm-fsz;
-					.ts-icon{
+					.tee-icon{
 						font-size: $lg-fsz;
 					}
 				}
@@ -981,7 +981,7 @@ body {
 					min-height: 0;
 				}
 
-				.ts-tag{
+				.tee-tag{
 					padding: 5px 10px;
 					border-radius: 50px;
 					text-decoration: none;
@@ -996,7 +996,7 @@ body {
 				font-size: $xsm-fsz;
 				font-weight: 500;
 
-				.ts-spec-tag{
+				.tee-spec-tag{
 					padding: 3px 7px;
 					border: 1px solid $nd-color;
 					color: $nd-color;
@@ -1064,7 +1064,7 @@ body {
 	margin-bottom: 20px;
 }
 
-.ts-subscribe{
+.tee-subscribe{
 	background: #222;
 	padding: 30px;
 
@@ -1074,28 +1074,30 @@ body {
 		}
 	}
 
-	.ts-sub-input{
+	.tee-sub-input{
 		.form-control{
 			padding: 10px 15px;
-			height: 44px;
+			height: 54px;
 			margin: 10px 0;
+			border-radius: 0px;
+			border:none;
 		}
 
 		button{
-			height: 44px;
-			font-size: $md-fsz;
+			height: 54px;
+			font-size: $lg-fsz;
 			padding: 10px 15px;
 		}
 	}
 
-	.ts-social{
+	.tee-social{
 		margin: 15px 0;
 
 		@include breakpoint (xs) {
 			text-align: center;
 		}
 
-		.ts-social-tit {
+		.tee-social-tit {
 			color: white;
 			margin: 0 10px 0 0;
 			font-size: $lg-fsz;

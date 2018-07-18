@@ -182,13 +182,13 @@ body {
   body .image-responsive img {
     width: 100%; }
 
-.input-group.ts-form {
+.input-group.tee-form {
   border: 1px solid #ddd;
   border-radius: 4px; }
-  .input-group.ts-form .input-group-addon {
+  .input-group.tee-form .input-group-addon {
     border: none;
     background: transparent; }
-  .input-group.ts-form .form-control {
+  .input-group.tee-form .form-control {
     box-shadow: none;
     border: none;
     outline: none;
@@ -474,13 +474,13 @@ body {
           width: 25%;
           padding: 15px 0;
           margin-left: 0.01px; } }
-      .pt-box .sub-menu a.btn .ts-icon {
+      .pt-box .sub-menu a.btn .tee-icon {
         font-size: 4.8rem;
         line-height: 0.75;
         margin-right: 10px;
         vertical-align: middle; }
         @media (max-width: 767px) {
-          .pt-box .sub-menu a.btn .ts-icon {
+          .pt-box .sub-menu a.btn .tee-icon {
             margin: 0 auto; } }
     .pt-box .sub-menu a.btn:hover {
       color: #9E2F31; }
@@ -516,7 +516,7 @@ body {
   background-color: white; }
   .shop .pro-container .affix .sub-menu button.btn {
     font-size: 1.5rem; }
-    .shop .pro-container .affix .sub-menu button.btn .ts-icon {
+    .shop .pro-container .affix .sub-menu button.btn .tee-icon {
       font-size: 3rem; }
 
 .pro-container .pro-wrp {
@@ -628,7 +628,7 @@ body {
       @media (max-width: 767px) {
         .pro-container .pro-wrp .pro-item .pro-tags {
           min-height: 0; } }
-      .pro-container .pro-wrp .pro-item .pro-tags .ts-tag {
+      .pro-container .pro-wrp .pro-item .pro-tags .tee-tag {
         padding: 5px 10px;
         border-radius: 50px;
         text-decoration: none; }
@@ -638,7 +638,7 @@ body {
       left: 10px;
       font-size: 1.2rem;
       font-weight: 500; }
-      .pro-container .pro-wrp .pro-item .pro-spec-tags .ts-spec-tag {
+      .pro-container .pro-wrp .pro-item .pro-spec-tags .tee-spec-tag {
         padding: 3px 7px;
         border: 1px solid #9E2F31;
         color: #9E2F31;
@@ -684,42 +684,44 @@ body {
   padding: 10px 30px;
   margin-bottom: 20px; }
 
-.ts-subscribe {
+.tee-subscribe {
   background: #222;
   padding: 30px; }
   @media (max-width: 991px) {
-    .ts-subscribe .is-flex {
+    .tee-subscribe .is-flex {
       display: block; } }
-  .ts-subscribe .ts-sub-input .form-control {
+  .tee-subscribe .tee-sub-input .form-control {
     padding: 10px 15px;
-    height: 44px;
-    margin: 10px 0; }
-  .ts-subscribe .ts-sub-input button {
-    height: 44px;
-    font-size: 1.8rem;
+    height: 54px;
+    margin: 10px 0;
+    border-radius: 0px;
+    border: none; }
+  .tee-subscribe .tee-sub-input button {
+    height: 54px;
+    font-size: 3rem;
     padding: 10px 15px; }
-  .ts-subscribe .ts-social {
+  .tee-subscribe .tee-social {
     margin: 15px 0; }
     @media (max-width: 767px) {
-      .ts-subscribe .ts-social {
+      .tee-subscribe .tee-social {
         text-align: center; } }
-    .ts-subscribe .ts-social .ts-social-tit {
+    .tee-subscribe .tee-social .tee-social-tit {
       color: white;
       margin: 0 10px 0 0;
       font-size: 3rem;
       vertical-align: middle;
       font-weight: 300; }
       @media (max-width: 767px) {
-        .ts-subscribe .ts-social .ts-social-tit {
+        .tee-subscribe .tee-social .tee-social-tit {
           margin: 0 0 15px 0; } }
-    .ts-subscribe .ts-social a {
+    .tee-subscribe .tee-social a {
       text-decoration: none;
       color: white;
       display: inline-block;
       margin: 0 5px;
       vertical-align: middle;
       text-align: center; }
-      .ts-subscribe .ts-social a .icon-social {
+      .tee-subscribe .tee-social a .icon-social {
         font-size: 3rem;
         padding: 10px;
         height: 55px;
