@@ -56,7 +56,7 @@ body {
   body .uppercase {
     text-transform: uppercase; }
   body .main-btn {
-    font-family: 'bahn_proregular';
+    font-family: "bahn_proregular";
     font-size: 38px;
     line-height: 38px;
     background: #9E2F31;
@@ -124,7 +124,7 @@ body {
   body .radio .cr {
     position: relative;
     display: inline-block;
-    border: 2px solid #ddd;
+    border: 2px solid #f3f3f3;
     border-radius: 4px;
     width: 1.3em;
     height: 1.3em;
@@ -168,7 +168,7 @@ body {
   body .form-control:focus {
     box-shadow: none;
     outline: 0;
-    border-color: #ddd; }
+    border-color: #f3f3f3; }
   body .has-error .help-block,
   body .has-error .form-control-feedback.glyphicon-remove {
     color: #9E2F31; }
@@ -178,12 +178,14 @@ body {
     color: #4CAF50;
     font-size: 7rem; }
   body .panel-default {
-    border: 2px solid #ddd; }
+    border: 2px solid #f3f3f3; }
   body .image-responsive img {
     width: 100%; }
+  body .p-tb-2 {
+    padding: 2rem 0; }
 
 .input-group.tee-form {
-  border: 1px solid #ddd;
+  border: 1px solid #f3f3f3;
   border-radius: 4px; }
   .input-group.tee-form .input-group-addon {
     border: none;
@@ -287,7 +289,7 @@ body {
     .navbar-default .cart-right .cart .cart-item {
       min-width: 360px;
       padding: 10px;
-      border-bottom: 1px solid #ddd; }
+      border-bottom: 1px solid #f3f3f3; }
       .navbar-default .cart-right .cart .cart-item .media-left img {
         max-width: 80px; }
       .navbar-default .cart-right .cart .cart-item .item-name {
@@ -360,7 +362,7 @@ body {
   width: 100%;
   margin: 0; }
   .sidebar-nav .search-wrapper .input-group {
-    border: 1px solid #ddd;
+    border: 1px solid #f3f3f3;
     border-radius: 50px;
     background: white; }
     .sidebar-nav .search-wrapper .input-group .form-control,
@@ -382,68 +384,87 @@ body {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
-    max-width: 500px; }
-    #signIn.in .modal-dialog .modal-content {
-      box-shadow: none;
-      border: 1px solid #ddd;
-      border-top: 5px solid #9E2F31; }
+    max-width: 800px; }
+    #signIn.in .modal-dialog .modal-content .modal-header {
+      background: #9E2F31;
+      color: white;
+      padding: 20px; }
+      #signIn.in .modal-dialog .modal-content .modal-header h2 {
+        font-family: "bahn_proregular";
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: 300; }
+      #signIn.in .modal-dialog .modal-content .modal-header .close {
+        color: white;
+        text-shadow: none;
+        opacity: 1; }
+    #signIn.in .modal-dialog .modal-content .modal-body {
+      padding: 2rem 5rem 4rem; }
       #signIn.in .modal-dialog .modal-content .modal-body .social-buttons {
-        margin: 12px 0;
         display: inline-block;
-        width: 100%; }
+        width: 100%;
+        text-align: center; }
         #signIn.in .modal-dialog .modal-content .modal-body .social-buttons a {
-          width: 33.3%; }
+          width: 30%;
+          padding: 10px 30px; }
         #signIn.in .modal-dialog .modal-content .modal-body .social-buttons .btn-fb {
-          display: block;
-          float: left;
+          display: inline-block;
           color: #fff;
           border-radius: 0;
           background-color: #3b5998;
-          border-top-left-radius: 4px;
-          border-bottom-left-radius: 4px; }
+          margin-right: 10px; }
           #signIn.in .modal-dialog .modal-content .modal-body .social-buttons .btn-fb:hover {
             color: #fff;
             background-color: #496ebc; }
-        #signIn.in .modal-dialog .modal-content .modal-body .social-buttons .btn-tw {
-          display: block;
-          float: left;
-          color: #fff;
-          border-radius: 0;
-          background-color: #55acee; }
-          #signIn.in .modal-dialog .modal-content .modal-body .social-buttons .btn-tw:hover {
-            color: #fff;
-            background-color: #59b5fa; }
         #signIn.in .modal-dialog .modal-content .modal-body .social-buttons .btn-gp {
-          display: block;
-          float: left;
+          display: inline-block;
           color: #fff;
           border-radius: 0;
-          background-color: #DD4D42;
-          border-top-right-radius: 4px;
-          border-bottom-right-radius: 4px; }
+          background-color: #DD4D42; }
           #signIn.in .modal-dialog .modal-content .modal-body .social-buttons .btn-gp:hover {
             color: #fff;
             background-color: #ea655b; }
         #signIn.in .modal-dialog .modal-content .modal-body .social-buttons .form-group {
           margin-bottom: 10px; }
+      #signIn.in .modal-dialog .modal-content .modal-body form .form-group {
+        margin-bottom: 2rem; }
+        #signIn.in .modal-dialog .modal-content .modal-body form .form-group .form-control {
+          border-color: #f3f3f3; }
+          #signIn.in .modal-dialog .modal-content .modal-body form .form-group .form-control::-webkit-input-placeholder {
+            color: #bcbcbc; }
+          #signIn.in .modal-dialog .modal-content .modal-body form .form-group .form-control::-moz-placeholder {
+            color: #bcbcbc; }
+          #signIn.in .modal-dialog .modal-content .modal-body form .form-group .form-control:-ms-input-placeholder {
+            color: #bcbcbc; }
+          #signIn.in .modal-dialog .modal-content .modal-body form .form-group .form-control:-moz-placeholder {
+            color: #bcbcbc; }
+      #signIn.in .modal-dialog .modal-content .modal-body form p {
+        padding-top: 2rem; }
       #signIn.in .modal-dialog .modal-content .modal-body .sign-in-or p span {
         vertical-align: middle;
         margin: 0 10px 10px;
-        width: 10%; }
+        width: 10%;
+        color: #9E2F31;
+        font-weight: 700; }
       #signIn.in .modal-dialog .modal-content .modal-body .sign-in-or p:before {
         content: '';
         height: 1px;
-        background: #ddd;
+        background: #9E2F31;
         display: inline-block;
         width: 45%;
         vertical-align: middle; }
       #signIn.in .modal-dialog .modal-content .modal-body .sign-in-or p:after {
         content: '';
         height: 1px;
-        background: #ddd;
+        background: #9E2F31;
         display: inline-block;
         width: 45%;
         vertical-align: middle; }
+      #signIn.in .modal-dialog .modal-content .modal-body p.help-block a {
+        color: #333; }
+      #signIn.in .modal-dialog .modal-content .modal-body p.join-us {
+        text-transform: uppercase;
+        font-size: 1.8rem; }
 
 .modal-backdrop,
 .modal-backdrop.fade {
@@ -452,8 +473,8 @@ body {
 
 .pt-box {
   position: relative;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd; }
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3; }
   .pt-box .sub-menu {
     height: 100%; }
     .pt-box .sub-menu .btn-group {
@@ -463,12 +484,12 @@ body {
           width: 100%; } }
     .pt-box .sub-menu a.btn {
       padding: 15px 30px;
-      border-left: 1px solid #ddd;
+      border-left: 1px solid #f3f3f3;
       border-radius: 0;
       font-weight: 700;
       font-size: 1.8rem; }
       .pt-box .sub-menu a.btn:last-child {
-        border-right: 1px solid #ddd; }
+        border-right: 1px solid #f3f3f3; }
       @media (max-width: 991px) {
         .pt-box .sub-menu a.btn {
           width: 25%;
@@ -577,7 +598,7 @@ body {
       font-size: 1.8rem;
       text-align: center;
       padding: 10px;
-      border: 2px solid #ddd;
+      border: 2px solid #f3f3f3;
       margin: 5px;
       border-radius: 4px;
       height: 50px;
@@ -610,10 +631,10 @@ body {
         .pro-container .pro-wrp .pro-item .pro-action .pro-quantity .input-group .form-control {
           border: none;
           text-align: center;
-          border: 2px solid #ddd; }
+          border: 2px solid #f3f3f3; }
         .pro-container .pro-wrp .pro-item .pro-action .pro-quantity .input-group .input-group-addon {
-          border: 1px solid #ddd;
-          background: #ddd; }
+          border: 1px solid #f3f3f3;
+          background: #f3f3f3; }
       .pro-container .pro-wrp .pro-item .pro-action .pro-purchase {
         padding: 0 5px 20px;
         width: 100%; }
@@ -649,7 +670,7 @@ body {
   padding: 30px;
   margin-top: 50px;
   margin-bottom: 100px;
-  border: 1px solid #ddd; }
+  border: 1px solid #f3f3f3; }
   .cta-box .cta-box-inner {
     background: white; }
     .cta-box .cta-box-inner .cta-text h2 {
@@ -826,7 +847,7 @@ footer {
         font-weight: 600;
         margin-right: 10px; }
     .cart-body form .cart-row {
-      border-top: 1px solid #ddd;
+      border-top: 1px solid #f3f3f3;
       padding-top: 20px;
       padding-bottom: 20px;
       width: auto;
@@ -853,7 +874,7 @@ footer {
           margin: 0 0 10px 0; }
           .cart-body form .cart-row .cart-info .pro-size .form-group .form-control {
             width: auto;
-            border: 2px solid #ddd;
+            border: 2px solid #f3f3f3;
             cursor: pointer; }
       .cart-body form .cart-row .cart-info .pro-quantity {
         vertical-align: middle; }
@@ -864,14 +885,14 @@ footer {
           .cart-body form .cart-row .cart-info .pro-quantity .input-group .form-control {
             border: none;
             text-align: center;
-            border: 2px solid #ddd;
+            border: 2px solid #f3f3f3;
             font-size: 1.2rem;
             padding: 5px 10px;
             height: 34px;
             width: 40px; }
           .cart-body form .cart-row .cart-info .pro-quantity .input-group .input-group-addon {
-            border: 1px solid #ddd;
-            background: #ddd; }
+            border: 1px solid #f3f3f3;
+            background: #f3f3f3; }
       @media (max-width: 767px) {
         .cart-body form .cart-row .cart-action {
           padding: 0; } }
@@ -885,7 +906,7 @@ footer {
       .cart-body form .billing-info,
       .cart-body form .payment-info,
       .cart-body form .promo-code {
-        border-top: 2px dashed #ddd; }
+        border-top: 2px dashed #f3f3f3; }
         .cart-body form .billing-info .span1,
         .cart-body form .payment-info .span1,
         .cart-body form .promo-code .span1 {
@@ -896,8 +917,8 @@ footer {
     .cart-body form .promo-code .main-btn {
       width: 100%; }
     .cart-body form .billing-info {
-      border-right: 2px dashed #ddd;
-      border-left: 2px dashed #ddd; }
+      border-right: 2px dashed #f3f3f3;
+      border-left: 2px dashed #f3f3f3; }
       @media (max-width: 991px) {
         .cart-body form .billing-info {
           border-left: none; } }
@@ -914,7 +935,7 @@ footer {
       .cart-body form .payment-info #gateways .radio-inline label {
         cursor: pointer; }
         .cart-body form .payment-info #gateways .radio-inline label .cr-img {
-          border: 2px solid #ddd;
+          border: 2px solid #f3f3f3;
           padding: 10px;
           height: 50px;
           border-radius: 4px; }
@@ -966,7 +987,7 @@ footer {
   background-position: center; }
 
 .border-box {
-  border: 2px solid #ddd;
+  border: 2px solid #f3f3f3;
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -1008,7 +1029,7 @@ footer {
   .acc-box .box-header .box-title {
     margin: 0; }
 .acc-box .box-body {
-  border: 2px solid #ddd; }
+  border: 2px solid #f3f3f3; }
   .acc-box .box-body .acc-info li {
     display: table;
     margin-bottom: 10px; }
@@ -1019,19 +1040,19 @@ footer {
       line-height: 22px; }
 .acc-box .box-table thead {
   background: #f4f4f4;
-  border: 2px solid #ddd; }
+  border: 2px solid #f3f3f3; }
   .acc-box .box-table thead tr th {
     padding: 15px 10px;
     text-transform: uppercase; }
 .acc-box .box-table tbody tr td {
-  border: 2px solid #ddd;
+  border: 2px solid #f3f3f3;
   vertical-align: middle;
   padding: 15px 10px; }
   .acc-box .box-table tbody tr td .status {
     font-style: italic; }
 
 .navbar-tab-xs {
-  border: 2px solid #ddd;
+  border: 2px solid #f3f3f3;
   border-radius: 4px;
   margin-bottom: 10px; }
   .navbar-tab-xs .tab-btn-xs {
@@ -1042,7 +1063,7 @@ footer {
     text-decoration: none; }
 
 .form-control {
-  border: 2px solid #ddd; }
+  border: 2px solid #f3f3f3; }
 
 .pro-size-info .pro-size-table {
   margin-top: 25px; }
@@ -1086,32 +1107,53 @@ footer {
   background: rgba(0, 0, 0, 0.5); }
   #mainMenu .modal-dialog {
     margin-top: 150px; }
-    #mainMenu .modal-dialog .modal-content {
-      padding: 30px;
-      border-radius: 0px; }
-      #mainMenu .modal-dialog .modal-content .modal-header {
-        border: none; }
-        #mainMenu .modal-dialog .modal-content .modal-header .close {
-          margin-top: -20px;
-          margin-right: -20px;
-          font-size: 3rem;
-          color: #333;
-          opacity: 1; }
-        #mainMenu .modal-dialog .modal-content .modal-header .logo-type {
-          padding: 30px 15px; }
-          #mainMenu .modal-dialog .modal-content .modal-header .logo-type svg {
-            fill: #9E2F31;
-            width: 200px; }
+    #mainMenu .modal-dialog .modal-content .modal-header .logo-type {
+      padding: 10px; }
+    #mainMenu .modal-dialog .modal-content .modal-body {
+      padding: 5rem 0; }
       #mainMenu .modal-dialog .modal-content .modal-body ul li {
-        margin-bottom: 10px; }
+        margin-bottom: 2rem; }
+        #mainMenu .modal-dialog .modal-content .modal-body ul li:after {
+          content: '';
+          width: 20px;
+          height: 2px;
+          display: block;
+          background: #9E2F31;
+          margin: 2rem auto 0; }
+        #mainMenu .modal-dialog .modal-content .modal-body ul li:last-child:after {
+          display: none; }
         #mainMenu .modal-dialog .modal-content .modal-body ul li a {
-          font-family: 'bahn_proregular';
           text-transform: uppercase;
           text-decoration: none;
           color: #333;
-          font-size: 3rem; }
+          font-size: 1.8rem;
+          letter-spacing: 5px;
+          display: block;
+          text-align: center; }
           #mainMenu .modal-dialog .modal-content .modal-body ul li a:hover {
             color: #9E2F31; }
+
+.modal {
+  background: rgba(0, 0, 0, 0.5); }
+  .modal .modal-dialog {
+    max-width: 800px; }
+    .modal .modal-dialog .modal-content {
+      box-shadow: none;
+      border: none;
+      border-radius: 0px; }
+      .modal .modal-dialog .modal-content .modal-header {
+        background: #9E2F31;
+        color: white;
+        padding: 20px; }
+        .modal .modal-dialog .modal-content .modal-header h2 {
+          font-family: "bahn_proregular";
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          font-weight: 300; }
+        .modal .modal-dialog .modal-content .modal-header .close {
+          color: white;
+          text-shadow: none;
+          opacity: 1; }
 
 .headroom .logo-type {
   fill: white;
