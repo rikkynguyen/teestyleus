@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Tee Style Us"
-permalink: /
+permalink: /home
 class: home
 ---
 
