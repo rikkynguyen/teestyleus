@@ -860,6 +860,12 @@ footer {
 
 #masthead-slide .carousel-inner {
   max-height: 800px !important; }
+#masthead-slide .carousel-control {
+  cursor: pointer; }
+  #masthead-slide .carousel-control .next-prev {
+    width: 20px;
+    position: absolute;
+    top: 50%; }
 #masthead-slide .carousel-indicators li {
   width: 30px;
   height: 8px;

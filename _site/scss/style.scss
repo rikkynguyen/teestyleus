@@ -1329,7 +1329,7 @@ footer{
 
 		.purchase-btn{
 			text-align: right;
-			
+
 			@include breakpoint (xs) {
 				text-align: center;
 			}
@@ -1368,6 +1368,17 @@ footer{
 #masthead-slide{
 	.carousel-inner{
 		max-height: 800px!important;
+	}
+
+	.carousel-control{
+		cursor: pointer;
+
+		.next-prev{
+			width: 20px;
+			position: absolute;
+			top: 50%;
+		}
+
 	}
 
 	.carousel-indicators{
