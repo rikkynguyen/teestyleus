@@ -315,6 +315,10 @@ body {
 	.p-tb-2{
 		padding: 2rem 0;
 	}
+
+	.navbar{
+		min-height: 40px;
+	}
 }
 
 .input-group.tee-form{
@@ -353,6 +357,7 @@ body {
 		
 		@include breakpoint (xs) {
 			margin-left: -15px;
+			padding: 15px;
 		}
 
 		.icon-bar{
@@ -376,7 +381,7 @@ body {
 		display: block;
 		position: absolute;
 		left: 50%;
-		transform: translateX(50%);
+		transform: translateX(-50%);
 		text-align: center;
 
 		a{
@@ -542,6 +547,12 @@ body {
 	.toggle-search{
 		margin: 0;
 		padding: 12px 0;
+		float: left;
+		border: none;
+
+		@include breakpoint (xs) {
+			padding: 5px 0;
+		}
 
 		.search-wrapper{
 			-webkit-transition: all 0.2s ease-in-out;
@@ -575,7 +586,7 @@ body {
 			.search-input{
 				border: none;
 				border-bottom: 1px solid white;
-				background: transparent;
+				background: $nd-color;
 				color: white;
 				height: 30px;
 				width: 100%;
@@ -705,6 +716,7 @@ body {
 		vertical-align: middle;
 		margin-right: -4px;
 	}
+
 	.modal-dialog{
 		display: inline-block;
 		text-align: left;
@@ -1151,6 +1163,7 @@ body {
 					text-decoration: none;
 					display: inline-block;
 					margin-bottom: 5px;
+					letter-spacing: 0;
 				}
 			}
 
@@ -1306,7 +1319,22 @@ footer{
 		padding: 50px 0px;
 		border-bottom: 1px solid white;
 
+		.footer-logo, .social-btn{
+			@include breakpoint (xs) {
+				text-align: center;
+				margin-bottom: 4rem;
+
+			}
+		}
+
+		.purchase-btn{
+			@include breakpoint (xs) {
+				text-align: center;
+			}
+		}
+
 		.social-btn{
+
 			a{
 				color: $nd-color;
 				background: white;
@@ -1337,7 +1365,7 @@ footer{
 
 #masthead-slide{
 	.carousel-inner{
-		height: 800px!important;
+		max-height: 800px!important;
 	}
 
 	.carousel-indicators{
@@ -1841,6 +1869,10 @@ footer{
 	.modal-dialog{
 		margin-top: 150px;
 
+		@include breakpoint (xs) {
+			margin-top: 60px;
+		}
+
 		.modal-content{
 			.modal-header{
 				.logo-type{
@@ -1962,6 +1994,10 @@ footer{
 	height: 50px;
 	transition: all 0.3s linear;
 
+	@include breakpoint (xs) {
+		height: 40px;
+	}
+
 	.logo-sign {
 		opacity: 0;
 	}
@@ -1970,7 +2006,7 @@ footer{
 		opacity: 1;
 	}
 
-	.navbar-left, .search-wrapper {
+	.navbar-left {
 		transform-origin: top left;
 		-ms-transform: scale(0.8, 0.8); /* IE 9 */
 		-webkit-transform: scale(0.8, 0.8); /* Safari */
