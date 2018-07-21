@@ -835,9 +835,11 @@ footer {
       footer .footer-row .footer-logo, footer .footer-row .social-btn {
         text-align: center;
         margin-bottom: 4rem; } }
-    @media (max-width: 767px) {
-      footer .footer-row .purchase-btn {
-        text-align: center; } }
+    footer .footer-row .purchase-btn {
+      text-align: right; }
+      @media (max-width: 767px) {
+        footer .footer-row .purchase-btn {
+          text-align: center; } }
     footer .footer-row .social-btn a {
       color: #9E2F31;
       background: white;

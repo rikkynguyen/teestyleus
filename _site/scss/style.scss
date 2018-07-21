@@ -1328,6 +1328,8 @@ footer{
 		}
 
 		.purchase-btn{
+			text-align: right;
+			
 			@include breakpoint (xs) {
 				text-align: center;
 			}
