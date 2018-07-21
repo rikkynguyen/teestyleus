@@ -865,7 +865,11 @@ footer {
   #masthead-slide .carousel-control .next-prev {
     width: 20px;
     position: absolute;
-    top: 50%; }
+    top: 50%;
+    transform: translateY(-50%); }
+    @media (max-width: 767px) {
+      #masthead-slide .carousel-control .next-prev {
+        width: 10px; } }
 #masthead-slide .carousel-indicators li {
   width: 30px;
   height: 8px;

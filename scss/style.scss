@@ -1377,6 +1377,11 @@ footer{
 			width: 20px;
 			position: absolute;
 			top: 50%;
+			transform: translateY(-50%);
+
+			@include breakpoint (xs) {
+				width: 10px;
+			}
 		}
 
 	}
