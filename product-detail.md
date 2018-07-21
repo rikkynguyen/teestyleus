@@ -5,15 +5,15 @@ permalink: /product-detail/
 class: "product-detail"
 ---
 <div class="pro-container">
-	<div class="container-fluid pro-wrp">
+	<div class="container pro-wrp">
 		<div class="row pro-item">
-			<div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+			<div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12" id="proGallery">
 				<div class="carousel carousel-main fw-image" data-flickity>
 					<img src="{{ site.baseurl }}/images/products/adults/product-detail/black.jpg">
 					<img src="{{ site.baseurl }}/images/products/adults/product-detail/navy.jpg">
 					<img src="{{ site.baseurl }}/images/products/adults/product-detail/design.jpg">
 				</div>
-				<div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "pageDots": false }'>
+				<div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
 					<div class="carousel-cell">
 						<img src="{{ site.baseurl }}/images/products/adults/product-detail/black.jpg">
 					</div>
@@ -27,13 +27,8 @@ class: "product-detail"
 				<hr class="visible-xs">
 			</div>
 			<div class="col-md-5 col-sm-6 col-xs-12">
-				<h1 class="pro-name">Not My Dictator</h1>
-				<div class="pro-tags">
-					<a href="" class="tee-tag btn-xs btn-success">New Arrival</a>
-					<a href="" class="tee-tag btn-xs btn-warning">Trending</a>
-					<a href="" class="tee-tag btn-xs btn-danger">On Sale</a>
-				</div>
-				<h2 class="pro-price">$25.99</h2>
+				<h1 class="pro-name uppercase">Not My Dictator</h1>
+				<h2 class="pro-price">300 000 VND</h2>
 				<p class="text-md pro-stock">Availability: <b class="nd-color">IN STOCK</b></p>
 				<div class="btn-group btn-group-lg pro-gender" data-toggle="buttons">
 					<label class="btn active">
@@ -79,33 +74,38 @@ class: "product-detail"
 						</li>
 					</ul>
 				</div>
-				<div class="pro-des hidden-sm">
+				<div class="pro-tags">
+					<a href="" class="tee-tag btn-xs btn-success">New Arrival</a>
+					<a href="" class="tee-tag btn-xs btn-warning">Trending</a>
+					<a href="" class="tee-tag btn-xs btn-danger">On Sale</a>
+				</div>
+				<!-- <div class="pro-des hidden-sm">
 					<p class="text-md"><b>Product Note</b></p>
 					<p class="text-md">
 						This is fairly self-explanatory. I wanted to express how a lot of people - including us - feel these days, without actually saying a name or calling anyone out. While we've got possibly the worst one ever, it applies across the board. We cannot have this shit. We are not a fascist nation and it needs to be said loud and proud.
 					</p>
-				</div>
+				</div> -->
 			</div>
-			<div class="pro-des visible-sm col-sm-12">
+			<!-- <div class="pro-des visible-sm col-sm-12">
 				<p class="text-md"><b>Product Note</b></p>
 				<p class="text-md">
 					This is fairly self-explanatory. I wanted to express how a lot of people - including us - feel these days, without actually saying a name or calling anyone out. While we've got possibly the worst one ever, it applies across the board. We cannot have this shit. We are not a fascist nation and it needs to be said loud and proud.
 				</p>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
-<div class="pro-container rd-bg">
-	<div class="container-fluid pro-wrp">
+<div class="pro-container">
+	<div class="container pro-wrp">
 		<div class="row">
-			<h2 class="text-center text-light">You might also like</h2>
+			<h2 class="text-center text-light black-head">You might also like</h2>
 			<div class="col-md-2 col-sm-4 col-xs-6 pro-item text-center">
 				<div class="thumbnail">
 					<a href="product-detail.html">
 						<img src="{{ site.baseurl }}/images/products/recommend/01.jpg">
 						<div class="caption text-center">
 							<h3 class="text-xlg pro-tit">Lorem Ispum Dolar Roma</h3>
-							<p class="pro-cat"><i class="nd-color">Typography</i></p>
+							<p class="pro-price">300 000 VND</p>
 						</div>
 					</a>
 				</div>
@@ -116,7 +116,7 @@ class: "product-detail"
 						<img src="{{ site.baseurl }}/images/products/recommend/02.jpg">
 						<div class="caption text-center">
 							<h3 class="text-xlg pro-tit">Lorem Ispum Dolar Roma</h3>
-							<p class="pro-cat"><i class="nd-color">Typography</i></p>
+							<p class="pro-price">300 000 VND</p>
 						</div>
 					</a>
 				</div>
@@ -127,7 +127,7 @@ class: "product-detail"
 						<img src="{{ site.baseurl }}/images/products/recommend/03.jpg">
 						<div class="caption text-center">
 							<h3 class="text-xlg pro-tit">Lorem Ispum Dolar Roma</h3>
-							<p class="pro-cat"><i class="nd-color">Typography</i></p>
+							<p class="pro-price">300 000 VND</p>
 						</div>
 					</a>
 				</div>
@@ -138,7 +138,7 @@ class: "product-detail"
 						<img src="{{ site.baseurl }}/images/products/recommend/04.jpg">
 						<div class="caption text-center">
 							<h3 class="text-xlg pro-tit">Lorem Ispum Dolar Roma</h3>
-							<p class="pro-cat"><i class="nd-color">Typography</i></p>
+							<p class="pro-price">300 000 VND</p>
 						</div>
 					</a>
 				</div>
@@ -149,7 +149,7 @@ class: "product-detail"
 						<img src="{{ site.baseurl }}/images/products/recommend/05.jpg">
 						<div class="caption text-center">
 							<h3 class="text-xlg pro-tit">Lorem Ispum Dolar Roma</h3>
-							<p class="pro-cat"><i class="nd-color">Typography</i></p>
+							<p class="pro-price">300 000 VND</p>
 						</div>
 					</a>
 				</div>
@@ -160,7 +160,7 @@ class: "product-detail"
 						<img src="{{ site.baseurl }}/images/products/recommend/06.jpg">
 						<div class="caption text-center">
 							<h3 class="text-xlg pro-tit">Lorem Ispum Dolar Roma</h3>
-							<p class="pro-cat"><i class="nd-color">Typography</i></p>
+							<p class="pro-price">300 000 VND</p>
 						</div>
 					</a>
 				</div>
@@ -168,7 +168,7 @@ class: "product-detail"
 		</div>
 	</div>
 </div>
-<div class="pro-container pro-size-info">
+<!-- <div class="pro-container pro-size-info">
 	<div class="container-fluid pro-wrp">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1 col-xs-12">
@@ -223,4 +223,4 @@ class: "product-detail"
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->

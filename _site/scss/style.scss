@@ -44,6 +44,7 @@ body {
 	font-family: $font-stack;
 	font-size: $sm-fsz;
 	color: $pr-color;
+	letter-spacing: 2px;
 
 	//16-03-2017
 	margin-top: 60px;
@@ -373,10 +374,9 @@ body {
 		height: 100%;
 		padding: 10px 15px;
 		display: block;
-		width: 100%;
 		position: absolute;
-		left: 0;
-		right: 0;
+		left: 50%;
+		transform: translateX(50%);
 		text-align: center;
 
 		a{
@@ -537,47 +537,140 @@ body {
 			right: 0;
 			vertical-align: middle;
 		}
-	} 
+	}
 
-	.search-wrapper{
-		margin: 12px 0;
+	.toggle-search{
+		margin: 0;
+		padding: 12px 0;
 
-		.input-group{
-			border: 2px solid white;
-			border-radius: 50px;
+		.search-wrapper{
+			-webkit-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			opacity: 0;
+			width: 0px;
+			display: inline-block;
+			overflow: hidden;
+			vertical-align: middle;
+			position: relative;
 
-			.input-group-btn button{
-				border: none;
-				background: transparent;
-				box-shadow: none;
+			.reset-btn {
+				border:1px solid transparent;
+				background-color: transparent;
+				display: inline-block;
+				vertical-align: middle;
+				outline: 0;
+				cursor: pointer;
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 30px;
+				cursor: pointer;
 				color: white;
-				padding: 5px 15px;
-				height: auto;
 			}
 
-			input.form-control{
+			.search-input:not(:valid) ~ .reset-btn {
+				display: none;
+			}
+
+			.search-input{
 				border: none;
+				border-bottom: 1px solid white;
 				background: transparent;
-				box-shadow: none;
 				color: white;
-				padding: 5px 15px;
-				height: auto;
+				height: 30px;
+				width: 100%;
+
+				&:focus{
+					outline: none;
+				}
 
 				&::-webkit-input-placeholder { 
 					color: white;
+					opacity: 0.5;
+					font-style: italic;
 				}
 				&::-moz-placeholder { 
 					color: white;
+					opacity: 0.5;
+					font-style: italic;
 				}
 				&:-ms-input-placeholder { 
 					color: white;
+					opacity: 0.5;
+					font-style: italic;
 				}
 				&:-moz-placeholder {
 					color: white;
+					opacity: 0.5;
+					font-style: italic;
 				}
 			}
 		}
-	}
+
+		label{
+			color: white;
+			font-size: $md-fsz;
+		}
+
+		input#in{
+			position: absolute;
+			appearance: none;
+			cursor: pointer;
+			left: -100%;
+			top: -100%;
+		}
+
+		#in + label {
+			position: absolute;
+			cursor: pointer;
+			padding: 10px;
+		}
+
+		#in:checked ~ .search-wrapper{
+			width: 200px;
+			opacity: 1;
+		}
+	} 
+
+	// .search-wrapper{
+	// 	margin: 12px 0;
+
+	// 	.input-group{
+	// 		border: 2px solid white;
+	// 		border-radius: 50px;
+
+	// 		.input-group-btn button{
+	// 			border: none;
+	// 			background: transparent;
+	// 			box-shadow: none;
+	// 			color: white;
+	// 			padding: 5px 15px;
+	// 			height: auto;
+	// 		}
+
+	// 		input.form-control{
+	// 			border: none;
+	// 			background: transparent;
+	// 			box-shadow: none;
+	// 			color: white;
+	// 			padding: 5px 15px;
+	// 			height: auto;
+
+	// 			&::-webkit-input-placeholder { 
+	// 				color: white;
+	// 			}
+	// 			&::-moz-placeholder { 
+	// 				color: white;
+	// 			}
+	// 			&:-ms-input-placeholder { 
+	// 				color: white;
+	// 			}
+	// 			&:-moz-placeholder {
+	// 				color: white;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 
 .sidebar-nav{
@@ -869,6 +962,18 @@ body {
 			margin-bottom: 20px;
 		}
 
+		.black-head{
+			margin: 0 15px 30px;
+			padding: 15px;
+			background: $pr-color;
+			color: white;
+			border-top: 2px solid $nd-color;
+			text-transform: uppercase;
+			font-weight: 900;
+			font-size: $md-fsz;
+			letter-spacing: 3px;
+		}
+
 		.pro-item{
 			display: none;
 
@@ -893,6 +998,7 @@ body {
 						margin-top: 0;
 						font-size: $sm-fsz;
 						text-transform: uppercase;
+						letter-spacing: 2px;
 					}
 
 					.pro-cat{
@@ -919,6 +1025,13 @@ body {
 
 			h1.pro-name{
 				margin-top: 0;
+				letter-spacing: 5px;
+				font-size: $lg-fsz;
+				letter-spacing: 2px;
+			}
+
+			h2.pro-price{
+				font-weight: 300;
 			}
 
 			.pro-stock,
@@ -932,10 +1045,11 @@ body {
 			.pro-gender{
 				label.btn{
 					box-shadow: none;
-					border: 2px solid $nd-color;
+					border: 2px solid $pr-color;
+					border-radius: 0px;
 
 					&.active{
-						background: $nd-color;
+						background: $pr-color;
 						color: white;
 					}
 				}
@@ -947,11 +1061,12 @@ body {
 					font-size: $md-fsz;
 					text-align: center;
 					padding: 10px;
-					border: 2px solid $rd-color;
+					background: $pr-color;
+					color: white;
 					margin: 5px;
-					border-radius: 4px;
 					height: 50px;
 					width: 50px;
+					border-radius: 0px;
 
 					@include breakpoint (sm) {
 						height: 45px;
@@ -960,8 +1075,7 @@ body {
 					}
 
 					&.active{
-						border-color: $nd-color;
-						color: $nd-color;
+						opacity: 0.6;
 					}
 
 					input{
@@ -996,12 +1110,15 @@ body {
 						.form-control{
 							border:none;
 							text-align: center;
-							border: 2px solid $rd-color;
+							border: 2px solid $pr-color;
+							border-radius: 0px;
 						}
 
 						.input-group-addon{
-							border: 1px solid $rd-color;
-							background: $rd-color;
+							border: 1px solid $pr-color;
+							background: $pr-color;
+							border-radius: 0px;
+							color: white;
 						}
 					}
 				}
@@ -1032,6 +1149,8 @@ body {
 					padding: 5px 10px;
 					border-radius: 50px;
 					text-decoration: none;
+					display: inline-block;
+					margin-bottom: 5px;
 				}
 			}
 
@@ -1731,7 +1850,7 @@ footer{
 
 			.modal-body{
 				padding: 5rem 0;
-				
+
 				ul{
 
 					li {
@@ -1854,14 +1973,44 @@ footer{
 	.navbar-left, .search-wrapper {
 		transform-origin: top left;
 		-ms-transform: scale(0.8, 0.8); /* IE 9 */
-   		-webkit-transform: scale(0.8, 0.8); /* Safari */
-    	transform: scale(0.8, 0.8);
+		-webkit-transform: scale(0.8, 0.8); /* Safari */
+		transform: scale(0.8, 0.8);
 	}
 
 	.navbar-right {
 		transform-origin: top right;
 		-ms-transform: scale(0.8, 0.8); /* IE 9 */
-   		-webkit-transform: scale(0.8, 0.8); /* Safari */
-    	transform: scale(0.8, 0.8);
+		-webkit-transform: scale(0.8, 0.8); /* Safari */
+		transform: scale(0.8, 0.8);
+	}
+}
+
+.product-detail{
+	.pro-wrp{
+		padding: 10rem 1.5rem;
+	}
+
+	#proGallery{
+		.carousel-main{
+			margin-bottom: 20px;
+
+			.flickity-page-dots{
+				display: none;
+			}
+		}
+
+		.carousel-nav {
+			.flickity-prev-next-button{
+				display: none;
+			}
+
+			.carousel-cell{
+				width: 33%;
+
+				img{
+					width: 100%;
+				}
+			}
+		}
 	}
 }

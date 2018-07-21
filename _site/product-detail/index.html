@@ -30,95 +30,104 @@
 
 <body class="product-detail">
 	<div class="navbar navbar-default navbar-fixed-top headroom">
-    <div class="container-fluid">
-      <div class="brand-logo">
-        <a href="/">
-          <img src="/images/logomark.svg" class="logo-sign">
-          <img src="/images/logotype.svg" class="logo-type">
-        </a>
-      </div>
-      <button type="button" class="navbar-left navbar-toggle hamburger is-closed animated" data-toggle="modal" data-target="#mainMenu">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+	<div class="container-fluid">
+		<div class="brand-logo">
+			<a href="/">
+				<img src="/images/logomark.svg" class="logo-sign">
+				<img src="/images/logotype.svg" class="logo-type">
+			</a>
+		</div>
+		<button type="button" class="navbar-left navbar-toggle hamburger is-closed animated" data-toggle="modal" data-target="#mainMenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
 
-      <form role="search" class="search-wrapper navbar-form navbar-left hidden-xs hidden-sm">
-        <div class="input-group">
-          <input type="search" placeholder="Search......" name="search" class="form-control" required>
-          <span class="input-group-btn">
-            <button class="btn btn-secondary" type="button"><span class="icon-magnifier"></span></button>
-          </span>
-        </div> 
-      </form>
+	  	<!-- <form role="search" class="search-wrapper navbar-form navbar-left hidden-xs hidden-sm">
+			<div class="input-group">
+			  <input type="search" placeholder="Search......" name="search" class="form-control" required>
+			  <span class="input-group-btn">
+				<button class="btn btn-secondary" type="button"><span class="icon-magnifier"></span></button>
+			  </span>
+			</div> 
+		</form> -->
 
-      <ul class="nav navbar-nav navbar-right cart-right">
-        <li class="hidden-xs"><a href="" data-toggle="modal" data-target="#signIn" class="uppercase">Sign In</a></li>
+		<div class="toggle-search navbar-form navbar-left">
+			<label class="btn" for="in"><span class="icon-magnifier"></span></label>
+			<input type="checkbox" name="" id="in">
+			<form class="search-wrapper">
+				<input type="search" placeholder="Search......" name="search" class="search-input" required>
+				<button class="reset-btn" type="reset">×</button>
+			</form>
+		</div>
 
-        <li>
-          <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="icon ts-shop"></span>
-            <span class="cart-badge badge">4</span>
-          </a>
-          <ul class="dropdown-menu cart">
-            <li class="cart-item media">
-              <div class="media-left media-middle">
-                <img src="/images/products/adults/01.png">
-              </div>
-              <div class="media-body media-middle">
-                <h3 class="text-light item-name">Lorem Ispum</h3>
-                <p>Quantity: 1</p>
-                <p><b class="item-price">$5.0</b></p>
-              </div>
-              <div class="media-right media-middle action">
-                <a href=""><span class="icon-close"></span></a>
-              </div>
-            </li>
-            <li class="cart-item media">
-              <div class="media-left media-middle">
-                <img src="/images/products/kids/01.png">
-              </div>
-              <div class="media-body media-middle">
-                <h3 class="text-light item-name">Lorem Ispum</h3>
-                <p>Quantity: 2</p>
-                <p><b class="item-price">$10.0</b></p>
-              </div>
-              <div class="media-right media-middle action">
-                <a href=""><span class="icon-close"></span></a>
-              </div>
-            </li>
-            <li class="cart-item media">
-              <div class="media-left media-middle">
-                <img src="/images/products/adults/02.png">
-              </div>
-              <div class="media-body media-middle">
-                <h3 class="text-light item-name">Lorem Ispum</h3>
-                <p>Quantity: 1</p>
-                <p><b class="item-price">$5.0</b></p>
-              </div>
-              <div class="media-right media-middle action">
-                <a href=""><span class="icon-close"></span></a>
-              </div>
-            </li>
-            <li class="cart-total">
-              <h3><span class="text-light">Sub-total: </span>$20.00</h3>
-              <a href="checkout" class="btn-lg main-btn">Check Out</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
+		<ul class="nav navbar-nav navbar-right cart-right">
+			<li class="hidden-xs"><a href="" data-toggle="modal" data-target="#signIn" class="uppercase">Sign In</a></li>
+
+			<li>
+				<a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="icon ts-shop"></span>
+					<span class="cart-badge badge">4</span>
+				</a>
+				<ul class="dropdown-menu cart">
+					<li class="cart-item media">
+						<div class="media-left media-middle">
+							<img src="/images/products/adults/01.png">
+						</div>
+						<div class="media-body media-middle">
+							<h3 class="text-light item-name">Lorem Ispum</h3>
+							<p>Quantity: 1</p>
+							<p><b class="item-price">$5.0</b></p>
+						</div>
+						<div class="media-right media-middle action">
+							<a href=""><span class="icon-close"></span></a>
+						</div>
+					</li>
+					<li class="cart-item media">
+						<div class="media-left media-middle">
+							<img src="/images/products/kids/01.png">
+						</div>
+						<div class="media-body media-middle">
+							<h3 class="text-light item-name">Lorem Ispum</h3>
+							<p>Quantity: 2</p>
+							<p><b class="item-price">$10.0</b></p>
+						</div>
+						<div class="media-right media-middle action">
+							<a href=""><span class="icon-close"></span></a>
+						</div>
+					</li>
+					<li class="cart-item media">
+						<div class="media-left media-middle">
+							<img src="/images/products/adults/02.png">
+						</div>
+						<div class="media-body media-middle">
+							<h3 class="text-light item-name">Lorem Ispum</h3>
+							<p>Quantity: 1</p>
+							<p><b class="item-price">$5.0</b></p>
+						</div>
+						<div class="media-right media-middle action">
+							<a href=""><span class="icon-close"></span></a>
+						</div>
+					</li>
+					<li class="cart-total">
+						<h3><span class="text-light">Sub-total: </span>$20.00</h3>
+						<a href="checkout" class="btn-lg main-btn">Check Out</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
 	<div class="pro-container">
-	<div class="container-fluid pro-wrp">
+	<div class="container pro-wrp">
 		<div class="row pro-item">
-			<div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+			<div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12" id="proGallery">
 				<div class="carousel carousel-main fw-image" data-flickity="">
 					<img src="/images/products/adults/product-detail/black.jpg" />
 					<img src="/images/products/adults/product-detail/navy.jpg" />
 					<img src="/images/products/adults/product-detail/design.jpg" />
 				</div>
-				<div class="carousel carousel-nav" data-flickity="{ &quot;asNavFor&quot;: &quot;.carousel-main&quot;, &quot;pageDots&quot;: false }">
+				<div class="carousel carousel-nav" data-flickity="{ &quot;asNavFor&quot;: &quot;.carousel-main&quot;, &quot;contain&quot;: true, &quot;pageDots&quot;: false }">
 					<div class="carousel-cell">
 						<img src="/images/products/adults/product-detail/black.jpg" />
 					</div>
@@ -132,13 +141,8 @@
 				<hr class="visible-xs" />
 			</div>
 			<div class="col-md-5 col-sm-6 col-xs-12">
-				<h1 class="pro-name">Not My Dictator</h1>
-				<div class="pro-tags">
-					<a href="" class="tee-tag btn-xs btn-success">New Arrival</a>
-					<a href="" class="tee-tag btn-xs btn-warning">Trending</a>
-					<a href="" class="tee-tag btn-xs btn-danger">On Sale</a>
-				</div>
-				<h2 class="pro-price">$25.99</h2>
+				<h1 class="pro-name uppercase">Not My Dictator</h1>
+				<h2 class="pro-price">300 000 VND</h2>
 				<p class="text-md pro-stock">Availability: <b class="nd-color">IN STOCK</b></p>
 				<div class="btn-group btn-group-lg pro-gender" data-toggle="buttons">
 					<label class="btn active">
@@ -184,33 +188,38 @@
 						</li>
 					</ul>
 				</div>
-				<div class="pro-des hidden-sm">
+				<div class="pro-tags">
+					<a href="" class="tee-tag btn-xs btn-success">New Arrival</a>
+					<a href="" class="tee-tag btn-xs btn-warning">Trending</a>
+					<a href="" class="tee-tag btn-xs btn-danger">On Sale</a>
+				</div>
+				<!-- <div class="pro-des hidden-sm">
 					<p class="text-md"><b>Product Note</b></p>
 					<p class="text-md">
 						This is fairly self-explanatory. I wanted to express how a lot of people - including us - feel these days, without actually saying a name or calling anyone out. While we've got possibly the worst one ever, it applies across the board. We cannot have this shit. We are not a fascist nation and it needs to be said loud and proud.
 					</p>
-				</div>
+				</div> -->
 			</div>
-			<div class="pro-des visible-sm col-sm-12">
+			<!-- <div class="pro-des visible-sm col-sm-12">
 				<p class="text-md"><b>Product Note</b></p>
 				<p class="text-md">
 					This is fairly self-explanatory. I wanted to express how a lot of people - including us - feel these days, without actually saying a name or calling anyone out. While we've got possibly the worst one ever, it applies across the board. We cannot have this shit. We are not a fascist nation and it needs to be said loud and proud.
 				</p>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
-<div class="pro-container rd-bg">
-	<div class="container-fluid pro-wrp">
+<div class="pro-container">
+	<div class="container pro-wrp">
 		<div class="row">
-			<h2 class="text-center text-light">You might also like</h2>
+			<h2 class="text-center text-light black-head">You might also like</h2>
 			<div class="col-md-2 col-sm-4 col-xs-6 pro-item text-center">
 				<div class="thumbnail">
 					<a href="product-detail.html">
 						<img src="/images/products/recommend/01.jpg" />
 						<div class="caption text-center">
 							<h3 class="text-xlg pro-tit">Lorem Ispum Dolar Roma</h3>
-							<p class="pro-cat"><i class="nd-color">Typography</i></p>
+							<p class="pro-price">300 000 VND</p>
 						</div>
 					</a>
 				</div>
@@ -221,7 +230,7 @@
 						<img src="/images/products/recommend/02.jpg" />
 						<div class="caption text-center">
 							<h3 class="text-xlg pro-tit">Lorem Ispum Dolar Roma</h3>
-							<p class="pro-cat"><i class="nd-color">Typography</i></p>
+							<p class="pro-price">300 000 VND</p>
 						</div>
 					</a>
 				</div>
@@ -232,7 +241,7 @@
 						<img src="/images/products/recommend/03.jpg" />
 						<div class="caption text-center">
 							<h3 class="text-xlg pro-tit">Lorem Ispum Dolar Roma</h3>
-							<p class="pro-cat"><i class="nd-color">Typography</i></p>
+							<p class="pro-price">300 000 VND</p>
 						</div>
 					</a>
 				</div>
@@ -243,7 +252,7 @@
 						<img src="/images/products/recommend/04.jpg" />
 						<div class="caption text-center">
 							<h3 class="text-xlg pro-tit">Lorem Ispum Dolar Roma</h3>
-							<p class="pro-cat"><i class="nd-color">Typography</i></p>
+							<p class="pro-price">300 000 VND</p>
 						</div>
 					</a>
 				</div>
@@ -254,7 +263,7 @@
 						<img src="/images/products/recommend/05.jpg" />
 						<div class="caption text-center">
 							<h3 class="text-xlg pro-tit">Lorem Ispum Dolar Roma</h3>
-							<p class="pro-cat"><i class="nd-color">Typography</i></p>
+							<p class="pro-price">300 000 VND</p>
 						</div>
 					</a>
 				</div>
@@ -265,7 +274,7 @@
 						<img src="/images/products/recommend/06.jpg" />
 						<div class="caption text-center">
 							<h3 class="text-xlg pro-tit">Lorem Ispum Dolar Roma</h3>
-							<p class="pro-cat"><i class="nd-color">Typography</i></p>
+							<p class="pro-price">300 000 VND</p>
 						</div>
 					</a>
 				</div>
@@ -273,7 +282,7 @@
 		</div>
 	</div>
 </div>
-<div class="pro-container pro-size-info">
+<!-- <div class="pro-container pro-size-info">
 	<div class="container-fluid pro-wrp">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1 col-xs-12">
@@ -324,11 +333,11 @@
 				</table>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 pro-size-img text-center">
-				<img src="/images/tshirt-size.png" />
+				<img src="/images/tshirt-size.png">
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 	<!-- <div class="container-fluid tee-subscribe">
 	<div class="row">

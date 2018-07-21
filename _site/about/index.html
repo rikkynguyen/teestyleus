@@ -30,85 +30,94 @@
 
 <body class="about-us">
 	<div class="navbar navbar-default navbar-fixed-top headroom">
-    <div class="container-fluid">
-      <div class="brand-logo">
-        <a href="/">
-          <img src="/images/logomark.svg" class="logo-sign">
-          <img src="/images/logotype.svg" class="logo-type">
-        </a>
-      </div>
-      <button type="button" class="navbar-left navbar-toggle hamburger is-closed animated" data-toggle="modal" data-target="#mainMenu">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+	<div class="container-fluid">
+		<div class="brand-logo">
+			<a href="/">
+				<img src="/images/logomark.svg" class="logo-sign">
+				<img src="/images/logotype.svg" class="logo-type">
+			</a>
+		</div>
+		<button type="button" class="navbar-left navbar-toggle hamburger is-closed animated" data-toggle="modal" data-target="#mainMenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
 
-      <form role="search" class="search-wrapper navbar-form navbar-left hidden-xs hidden-sm">
-        <div class="input-group">
-          <input type="search" placeholder="Search......" name="search" class="form-control" required>
-          <span class="input-group-btn">
-            <button class="btn btn-secondary" type="button"><span class="icon-magnifier"></span></button>
-          </span>
-        </div> 
-      </form>
+	  	<!-- <form role="search" class="search-wrapper navbar-form navbar-left hidden-xs hidden-sm">
+			<div class="input-group">
+			  <input type="search" placeholder="Search......" name="search" class="form-control" required>
+			  <span class="input-group-btn">
+				<button class="btn btn-secondary" type="button"><span class="icon-magnifier"></span></button>
+			  </span>
+			</div> 
+		</form> -->
 
-      <ul class="nav navbar-nav navbar-right cart-right">
-        <li class="hidden-xs"><a href="" data-toggle="modal" data-target="#signIn" class="uppercase">Sign In</a></li>
+		<div class="toggle-search navbar-form navbar-left">
+			<label class="btn" for="in"><span class="icon-magnifier"></span></label>
+			<input type="checkbox" name="" id="in">
+			<form class="search-wrapper">
+				<input type="search" placeholder="Search......" name="search" class="search-input" required>
+				<button class="reset-btn" type="reset">×</button>
+			</form>
+		</div>
 
-        <li>
-          <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="icon ts-shop"></span>
-            <span class="cart-badge badge">4</span>
-          </a>
-          <ul class="dropdown-menu cart">
-            <li class="cart-item media">
-              <div class="media-left media-middle">
-                <img src="/images/products/adults/01.png">
-              </div>
-              <div class="media-body media-middle">
-                <h3 class="text-light item-name">Lorem Ispum</h3>
-                <p>Quantity: 1</p>
-                <p><b class="item-price">$5.0</b></p>
-              </div>
-              <div class="media-right media-middle action">
-                <a href=""><span class="icon-close"></span></a>
-              </div>
-            </li>
-            <li class="cart-item media">
-              <div class="media-left media-middle">
-                <img src="/images/products/kids/01.png">
-              </div>
-              <div class="media-body media-middle">
-                <h3 class="text-light item-name">Lorem Ispum</h3>
-                <p>Quantity: 2</p>
-                <p><b class="item-price">$10.0</b></p>
-              </div>
-              <div class="media-right media-middle action">
-                <a href=""><span class="icon-close"></span></a>
-              </div>
-            </li>
-            <li class="cart-item media">
-              <div class="media-left media-middle">
-                <img src="/images/products/adults/02.png">
-              </div>
-              <div class="media-body media-middle">
-                <h3 class="text-light item-name">Lorem Ispum</h3>
-                <p>Quantity: 1</p>
-                <p><b class="item-price">$5.0</b></p>
-              </div>
-              <div class="media-right media-middle action">
-                <a href=""><span class="icon-close"></span></a>
-              </div>
-            </li>
-            <li class="cart-total">
-              <h3><span class="text-light">Sub-total: </span>$20.00</h3>
-              <a href="checkout" class="btn-lg main-btn">Check Out</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
+		<ul class="nav navbar-nav navbar-right cart-right">
+			<li class="hidden-xs"><a href="" data-toggle="modal" data-target="#signIn" class="uppercase">Sign In</a></li>
+
+			<li>
+				<a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="icon ts-shop"></span>
+					<span class="cart-badge badge">4</span>
+				</a>
+				<ul class="dropdown-menu cart">
+					<li class="cart-item media">
+						<div class="media-left media-middle">
+							<img src="/images/products/adults/01.png">
+						</div>
+						<div class="media-body media-middle">
+							<h3 class="text-light item-name">Lorem Ispum</h3>
+							<p>Quantity: 1</p>
+							<p><b class="item-price">$5.0</b></p>
+						</div>
+						<div class="media-right media-middle action">
+							<a href=""><span class="icon-close"></span></a>
+						</div>
+					</li>
+					<li class="cart-item media">
+						<div class="media-left media-middle">
+							<img src="/images/products/kids/01.png">
+						</div>
+						<div class="media-body media-middle">
+							<h3 class="text-light item-name">Lorem Ispum</h3>
+							<p>Quantity: 2</p>
+							<p><b class="item-price">$10.0</b></p>
+						</div>
+						<div class="media-right media-middle action">
+							<a href=""><span class="icon-close"></span></a>
+						</div>
+					</li>
+					<li class="cart-item media">
+						<div class="media-left media-middle">
+							<img src="/images/products/adults/02.png">
+						</div>
+						<div class="media-body media-middle">
+							<h3 class="text-light item-name">Lorem Ispum</h3>
+							<p>Quantity: 1</p>
+							<p><b class="item-price">$5.0</b></p>
+						</div>
+						<div class="media-right media-middle action">
+							<a href=""><span class="icon-close"></span></a>
+						</div>
+					</li>
+					<li class="cart-total">
+						<h3><span class="text-light">Sub-total: </span>$20.00</h3>
+						<a href="checkout" class="btn-lg main-btn">Check Out</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
 	<div class="container-fluid banner about-banner">
 	<div class="row">
 		<div class="banner-content">
