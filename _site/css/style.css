@@ -266,6 +266,14 @@ body {
     @media (max-width: 767px) {
       .navbar-default .navbar-left > li > a.dropdown-toggle {
         padding: 12px 15px; } }
+  .navbar-default .navbar-right > li {
+    float: left; }
+    @media (max-width: 767px) {
+      .navbar-default .navbar-right > li .sign-in {
+        padding: 0px; } }
+    .navbar-default .navbar-right > li .sign-in .icon-user {
+      font-size: 1.8rem;
+      padding: 15px; }
   @media (max-width: 767px) {
     .navbar-default .cart-right {
       float: right;
@@ -423,17 +431,14 @@ body {
 #signIn.in {
   text-align: center;
   padding: 0 !important; }
-  #signIn.in:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -4px; }
   #signIn.in .modal-dialog {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
     max-width: 800px; }
+    @media (max-width: 767px) {
+      #signIn.in .modal-dialog {
+        width: 90%; } }
     #signIn.in .modal-dialog .modal-content .modal-header {
       background: #9E2F31;
       color: white;
@@ -449,6 +454,9 @@ body {
         opacity: 1; }
     #signIn.in .modal-dialog .modal-content .modal-body {
       padding: 2rem 5rem 4rem; }
+      @media (max-width: 767px) {
+        #signIn.in .modal-dialog .modal-content .modal-body {
+          padding: 2rem 2rem 4rem; } }
       #signIn.in .modal-dialog .modal-content .modal-body .social-buttons {
         display: inline-block;
         width: 100%;
@@ -456,6 +464,11 @@ body {
         #signIn.in .modal-dialog .modal-content .modal-body .social-buttons a {
           width: 30%;
           padding: 10px 30px; }
+          @media (max-width: 767px) {
+            #signIn.in .modal-dialog .modal-content .modal-body .social-buttons a {
+              width: calc(50% - 5px);
+              display: block;
+              float: left; } }
         #signIn.in .modal-dialog .modal-content .modal-body .social-buttons .btn-fb {
           display: inline-block;
           color: #fff;
@@ -500,14 +513,14 @@ body {
         height: 1px;
         background: #9E2F31;
         display: inline-block;
-        width: 45%;
+        width: 40%;
         vertical-align: middle; }
       #signIn.in .modal-dialog .modal-content .modal-body .sign-in-or p:after {
         content: '';
         height: 1px;
         background: #9E2F31;
         display: inline-block;
-        width: 45%;
+        width: 40%;
         vertical-align: middle; }
       #signIn.in .modal-dialog .modal-content .modal-body p.help-block a {
         color: #333; }

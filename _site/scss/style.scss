@@ -439,6 +439,23 @@ body {
 		}
 	}
 
+	.navbar-right{
+		>li{
+			float: left;
+
+			.sign-in{
+				@include breakpoint (xs) {
+					padding: 0px;
+				}
+
+				.icon-user{
+					font-size: $md-fsz;
+					padding: 15px;
+				}
+			}
+		}
+	}
+
 	.cart-right{
 		@include breakpoint (xs) {
 			float: right;
@@ -709,19 +726,15 @@ body {
 	text-align: center;
 	padding: 0!important;
 
-	&:before {
-		content: '';
-		display: inline-block;
-		height: 100%;
-		vertical-align: middle;
-		margin-right: -4px;
-	}
-
 	.modal-dialog{
 		display: inline-block;
 		text-align: left;
 		vertical-align: middle;
 		max-width: 800px;
+
+		@include breakpoint (xs) {
+			width: 90%;
+		}
 
 		.modal-content{
 			.modal-header{
@@ -746,6 +759,10 @@ body {
 			.modal-body{
 				padding: 2rem 5rem 4rem;
 
+				@include breakpoint (xs) {
+					padding: 2rem 2rem 4rem;
+				}
+
 				.social-buttons{
 					display: inline-block;
 					width: 100%;
@@ -754,6 +771,12 @@ body {
 					a{
 						width: 30%;
 						padding: 10px 30px;
+
+						@include breakpoint (xs) {
+							width: calc(50% - 5px);
+							display: block;
+							float: left;
+						}
 					}
 
 					.btn-fb{
@@ -828,7 +851,7 @@ body {
 							height: 1px;
 							background: $nd-color;
 							display: inline-block;
-							width: 45%;
+							width: 40%;
 							vertical-align: middle;
 						}
 
@@ -837,7 +860,7 @@ body {
 							height: 1px;
 							background: $nd-color;
 							display: inline-block;
-							width: 45%;
+							width: 40%;
 							vertical-align: middle;
 						}
 					}
