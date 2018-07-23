@@ -272,7 +272,7 @@ body {
       .navbar-default .navbar-right > li .sign-in {
         padding: 0px; } }
     .navbar-default .navbar-right > li .sign-in .icon-user {
-      font-size: 1.8rem;
+      font-size: 2rem;
       padding: 15px; }
   @media (max-width: 767px) {
     .navbar-default .cart-right {
@@ -399,7 +399,7 @@ body {
           font-style: italic; }
     .navbar-default .toggle-search label {
       color: white;
-      font-size: 1.8rem; }
+      font-size: 2rem; }
     .navbar-default .toggle-search input#in {
       position: absolute;
       appearance: none;
